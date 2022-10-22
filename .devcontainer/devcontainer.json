@@ -1,5 +1,5 @@
 {
-  "name": "Part8",
+  "name": "wikipedia-log-analysis-tool",
   "dockerComposeFile": [
     "../docker-compose.yml",
   ],
