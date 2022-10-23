@@ -94,7 +94,7 @@ Wikipedia のアクセスログのデータは下記 URL からダウンロー�
 Docker の db コンテナの MySQL に、`root` ユーザーでログインする。
 
 ```bash
-docker-compose exec db mysql -p
+docker compose exec db mysql -p
 ```
 
 実行するとパスワードを聞かれるので、 `root` ユーザーのパスワード `pass` を入力する。
@@ -118,7 +118,7 @@ mysql> quit
 テキストファイルから MySQL のテーブルへデータインポートする。
 
 ```bash
-docker-compose exec app mysqlimport -h db -u test_user -p -d --fields-terminated-by=' ' --local test_database databases/page_views
+docker compose exec app mysqlimport -h db -u test_user -p -d --fields-terminated-by=' ' --local test_database databases/page_views
 ```
 
 実行するとパスワードを聞かれるので、 `test_user` のパスワード `pass` を入力する。
